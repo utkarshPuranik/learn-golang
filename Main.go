@@ -10,14 +10,14 @@ func main() {
 	fmt.Println("Hello, World!")
 
 	//Swap - multiple variable return
-	//a, b := swap("Utkarsh", "Puranik")
-	//fmt.Println(a, b)
+	a, b := swap("Utkarsh", "Puranik")
+	fmt.Println(a, b)
 
 	//Data Types
-	//types()
+	types()
 
 	//Loops
-	//LoopExample1()
+	LoopExample1()
 
 	mySqrt, iterations := Sqrt(2)
 	sysSqrt := math.Sqrt(2)

@@ -2,8 +2,31 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"math/cmplx"
+	"math/rand"
 )
+
+func function1() {
+
+	fmt.Println("This is test of packages, number is ", rand.Intn(10), " and also value of pi is ", math.Pi)
+}
+
+func addition(x, y int) int {
+	return x + y
+}
+
+func swap(x, y string) (string, string) {
+	return y, x
+}
+
+func LoopExample1() {
+	sum := 0
+	for i := 0; i < 100; i++ {
+		sum += i
+	}
+	fmt.Println("The sum of values from 0-99 is ", sum)
+}
 
 var (
 	ToBe     bool   = false

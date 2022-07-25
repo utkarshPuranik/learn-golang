@@ -1,6 +1,6 @@
 package main
 
-const delta = 0.00001
+const delta = 0.0001
 
 func isNearEnough(d float64) bool {
 	if d < 0.0 {
