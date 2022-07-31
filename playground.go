@@ -5,6 +5,7 @@ import (
 	"math"
 	"math/cmplx"
 	"math/rand"
+	"time"
 )
 
 func function1() {
@@ -47,4 +48,27 @@ func types() {
 	fmt.Printf("Type: %T Value: %v\n", z, z)
 
 	fmt.Printf("The value is %v\n", float64(MaxInt16))
+}
+
+func switchTest() {
+	fmt.Println("When's Saturday?")
+	today := time.Now().Weekday()
+	switch time.Saturday {
+	case today + 0:
+		fmt.Println("Today.")
+	case today + 1:
+		fmt.Println("Tomorrow.")
+	case today + 2:
+		fmt.Println("In two days.")
+	default:
+		fmt.Println("Too far away.")
+	}
+}
+
+func TestDefers() {
+	defer fmt.Printf("\n")
+	for i := 0; i < 10; i++ {
+		defer fmt.Printf("%v ", i)
+	}
+	fmt.Println("done")
 }
